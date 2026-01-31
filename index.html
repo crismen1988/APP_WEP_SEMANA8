@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezone Online</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ENCABEZADO CON MENÚ DE NAVEGACIÓN -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="fas fa-shopping-bag me-2"></i> Ezone Tienda Online
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#video">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#productos">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <main class="container my-5">
+        <!-- CARRUSEL DE IMÁGENES -->
+        <section id="inicio" class="mb-5">
+            <h2 class="text-center mb-4">Novedades</h2>
+            <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://housmartec.com/wp-content/uploads/2024/10/C928-1.png" class="d-block w-100" alt="Laptop Gamer">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Kit Sensor de Movimiento Smart</h3>
+                            <p class="fs-5">Potencia tú Seguridad</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://housmartec.com/wp-content/uploads/2024/11/C952.png" class="d-block w-100" alt="Smartphone Pro">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Cámara 2K Tuya Smart</h3>
+                            <p class="fs-5">Cámara Wifi con visión nocturna</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://housmartec.com/wp-content/uploads/2024/10/2-36.png" class="d-block w-100" alt="Monitor 4K">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Bocina 20 Watts</h3>
+                            <p class="fs-5">Adaptable a cualquier Sistema de Seguridad</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE VIDEO -->
+        <section id="video" class="mb-5">
+            <h2 class="text-center mb-4">Mira Nuestro Video</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- VIDEO LOCAL CON RUTA RELATIVA -->
+                    <div class="ratio ratio-16x9">
+                        <video controls poster="assets/images/video-poster.jpg">
+                            <source src="assets/videos/video_promocional.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Por qué elegirnos?</h5>
+                            <p class="card-text">
+                                En Ezone Tienda Online ofrecemos los mejores productos con garantía de calidad y 
+                                servicio al cliente excepcional. Descubre nuestras ofertas exclusivas y beneficios:
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Envío gratis en compras mayores a $300</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Devoluciones sin complicaciones</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Soporte 24/7</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>Productos 100% originales</li>
+                            </ul>
+                            <button id="videoAlertBtn" class="btn btn-primary mt-3">
+                                <i class="fas fa-bell me-2"></i>Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLA DE PRODUCTOS -->
+        <section id="productos" class="mb-5">
+            <h2 class="text-center mb-4">Catálogo de Productos</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>KIT ALARMA NEO DSC - MODELO 585</td>
+                            <td>Cableada Sin Teclado</td>
+                            <td><strong>$ 199.99</strong></td>
+                            <td><span class="badge bg-success">Disponible</span></td>
+                            <td><button class="btn btn-sm btn-primary btn-ver-mas" data-product-id="1">Ver Más</button></td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>ELÉCTRIFICADOR HAGROY POWER i8</td>
+                            <td>Energizador de 15.000 V</td>
+                            <td><strong>$ 235.30</strong></td>
+                            <td><span class="badge bg-success">Disponible</span></td>
+                            <td><button class="btn btn-sm btn-primary btn-ver-mas" data-product-id="2">Ver Más</button></td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Kit Casa Inteligente</td>
+                            <td>¡Controla tus equipos por Voz!</td>
+                            <td><strong>$ 136.75</strong></td>
+                            <td><span class="badge bg-warning text-dark">Pocos</span></td>
+                            <td><button class="btn btn-sm btn-primary btn-ver-mas" data-product-id="3">Ver Más</button></td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>Teclado Mecánico</td>
+                            <td>RGB, Switches Cherry MX</td>
+                            <td><strong>$ 45.50</strong></td>
+                            <td><span class="badge bg-success">Disponible</span></td>
+                            <td><button class="btn btn-sm btn-primary btn-ver-mas" data-product-id="4">Ver Más</button></td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>Auriculares Gaming</td>
+                            <td>7.1 Surround, Micrófono Retráctil</td>
+                            <td><strong>$ 65.25</strong></td>
+                            <td><span class="badge bg-danger">Agotado</span></td>
+                            <td><button class="btn btn-sm btn-secondary" disabled>Agotado</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre *</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nombre</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico *</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Por favor ingresa un correo válido</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje *</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                            <div class="invalid-feedback">Por favor ingresa tu mensaje</div>
+                            <small id="charCount" class="text-muted">0 caracteres</small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                        </button>
+                    </form>
+                    <div id="formSuccessMessage" class="alert-success-custom mt-3"></div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Información de Contacto</h5>
+                            <p class="card-text">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Av. Oriente y 16 de Diciembre, Baños, Ecuador
+                            </p>
+                            <p class="card-text">
+                                <i class="fas fa-phone me-2"></i>
+                                +593 960182384
+                            </p>
+                            <p class="card-text">
+                                <i class="fas fa-envelope me-2"></i>
+                                contacto@ezonetiendaonline.com
+                            </p>
+                            
+                            <h6 class="mt-4">Síguenos en redes sociales:</h6>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-decoration-none text-primary">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none text-info">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none text-danger">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none text-primary">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL PARA DETALLES DEL PRODUCTO -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="productModalLabel">
+                        <i class="fas fa-info-circle me-2"></i>Detalles del Producto
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img id="modalProductImage" src="" class="img-fluid rounded" alt="Producto">
+                        </div>
+                        <div class="col-md-7">
+                            <h4 id="modalProductName" class="mb-3"></h4>
+                            <p id="modalProductDescription" class="text-muted"></p>
+                            
+                            <div class="mb-3">
+                                <strong>Especificaciones:</strong>
+                                <ul id="modalProductSpecs" class="list-unstyled mt-2"></ul>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <span class="text-muted">Precio:</span>
+                                    <h3 id="modalProductPrice" class="mb-0 text-success"></h3>
+                                </div>
+                                <span id="modalProductStock" class="badge"></span>
+                            </div>
+                            
+                            <div id="modalProductAvailability" class="alert alert-info">
+                                <i class="fas fa-truck me-2"></i>
+                                <span id="modalShippingInfo"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-1"></i>Cerrar
+                    </button>
+                    <button type="button" class="btn btn-success">
+                        <i class="fas fa-cart-plus me-1"></i>Añadir al Carrito
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-shopping-cart me-1"></i>Comprar Ahora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Tienda Online</h5>
+                    <p>Calidad y servicio garantizado</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="#video" class="text-white text-decoration-none">Video</a></li>
+                        <li><a href="#productos" class="text-white text-decoration-none">Productos</a></li>
+                        <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-envelope me-2"></i>info@ezonetiendaonline.com</p>
+                    <p><i class="fas fa-clock me-2"></i>Lun-Vie: 9:00-18:00</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center mb-0">&copy; 2026 Ezone Tienda Online. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
