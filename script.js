@@ -32,7 +32,7 @@ const productosDB = {
     3: {
         nombre: "Kit casa inteligente",
         descripcion: "Sistemas de Domótica para casas inteligentes",
-        precio: "$499.99",
+        precio: "$ 136.75",
         stock: "Pocos disponibles",
         stockClass: "bg-warning text-dark",
         envio: "Envío gratis - Entrega en 3-5 días hábiles",
@@ -47,7 +47,7 @@ const productosDB = {
     4: {
         nombre: "Teclado Mecánico RGB",
         descripcion: "Teclado mecánico gaming con switches Cherry MX, iluminación RGB personalizable y construcción de aluminio de alta calidad.",
-        precio: "$129.99",
+        precio: "$ 45.50",
         stock: "Disponible",
         stockClass: "bg-success",
         envio: "Envío gratis - Entrega en 2-4 días hábiles",
